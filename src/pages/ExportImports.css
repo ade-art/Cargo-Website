@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  font-family: Arial, sans-serif;
+  color: #1e2a3a;
+}
+
+/* HERO */
+.Ehero {
+  height: 85vh;
+  background: url("/Invest.png") center/cover no-repeat;
+  position: relative;
+}
+
+.Ehero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  height: 100%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  max-width: 600px;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #c30000;
+  color: #fff;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* SERVICES */
+.services {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* BENEFITS */
+.benefits {
+  display: flex;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 100px;
+}
+
+.benefits-map img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* VEHICLES */
+.vehicles {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.vehicle-card img {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #f5f7fa;
+  padding: 80px 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 1024px) {
+  .service-grid,
+  .vehicle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-overlay {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .service-grid,
+  .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services,
+  .vehicles,
+  .benefits {
+    padding: 40px 20px;
+  }
+}
